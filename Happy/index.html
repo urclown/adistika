@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Zone!</title>
+    <style>
+        body {
+            background-color: #f8e6a8;
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive;
+            color: #333;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Smile Zone!</h1>
+    <p>Click the button below for a surprise!</p>
+    <button class="btn" onclick="showContent()">Make Me Smile</button>
+    <div class="content" id="content" style="display: none;">
+        <img src="https://media.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy.gif?cid=790b76113x6t18i0lxq4gw6gk3tpfgikoq7epyino59pv6a4&ep=v1_gifs_trending&rid=giphy.gif&ct=g" alt="Funny GIF" width="400px">
+        <p>Don't worry, be happy adis!</p>
+    </div>
+
+    <script>
+        function showContent() {
+            document.getElementById("content").style.display = "block";
+        }
+    </script>
+</body>
+</html>
